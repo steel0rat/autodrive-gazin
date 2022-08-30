@@ -14,7 +14,7 @@ class CreateCarModelTable extends Migration
     public function up()
     {
         Schema::create('car_model', function (Blueprint $table) {
-            $table->integer('id')->unsigned()->index();
+            $table->integer('id')->unsigned()->index()->unique();
             $table->integer('mark_id')->unsigned()->index();
             $table->string('caption');
             $table->string('code')->nullable();

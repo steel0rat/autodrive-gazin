@@ -35,33 +35,33 @@ class Car extends Model
 
     public function model()
     {
-        return $this->hasOne(CarModel::class);
+        return $this->belongsTo(CarModel::class);
     }
 
-    public function generation()
+    public function model_generation()
     {
-        return $this->hasOne(CarGeneration::class);
+        return $this->belongsTo(CarGeneration::class);
     }
 
     public function color()
     {
-        return $this->hasOne(CarColor::class);
+        return $this->belongsTo(CarColor::class);
     }
 
     public function bodyType()
     {
-        return $this->hasOne(CarBodyType::class);
+        return $this->belongsTo(CarBodyType::class);
     }
     public function engineType()
     {
-        return $this->hasOne(CarEngineType::class);
+        return $this->belongsTo(CarEngineType::class);
     }
     public function transmitionType()
     {
-        return $this->hasOne(CarTransmitionType::class);
+        return $this->belongsTo(CarTransmitionType::class);
     }
     public function gearType()
     {
-        return $this->hasOne(CarGearType::class);
+        return $this->belongsTo(CarGearType::class);
     }
 }

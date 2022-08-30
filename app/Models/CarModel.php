@@ -14,7 +14,7 @@ class CarModel extends Model
 {
     protected $table = 'car_model';
 
-    protected $primaryKey = '';
+    protected $primaryKey = 'id';
 
     protected $fillable = [
         'id', 'mark_id', 'caption', 'code'

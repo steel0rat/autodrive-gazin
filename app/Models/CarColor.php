@@ -13,7 +13,7 @@ class CarColor extends Model
 {
     protected $table = 'car_color';
 
-    protected $primaryKey = '';
+    protected $primaryKey = 'id';
 
     protected $fillable = [
         'id', 'caption', 'code'

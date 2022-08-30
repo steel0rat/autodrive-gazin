@@ -15,7 +15,7 @@ class CarGeneration extends Model
 {
     protected $table = 'car_generation';
 
-    protected $primaryKey = '';
+    protected $primaryKey = 'id';
 
     protected $fillable = [
         'id', 'mark_id', 'model_id', 'caption', 'code'
@@ -37,7 +37,7 @@ class CarGeneration extends Model
 
     public function car()
     {
-        return $this->hasMany(Car::class, 'generation_id', 'id');
+        return $this->hasMany(Car::class, 'model_generation_id', 'id');
     }
 
     public function mark()

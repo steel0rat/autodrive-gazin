@@ -13,7 +13,7 @@ class CarGearType extends Model
 {
     protected $table = 'car_gear_type';
 
-    protected $primaryKey = '';
+    protected $primaryKey = 'id';
 
     protected $fillable = [
         'id', 'caption', 'code'

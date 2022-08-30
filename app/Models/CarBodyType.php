@@ -13,7 +13,7 @@ class CarBodyType extends Model
 {
     protected $table = 'car_body_type';
 
-    protected $primaryKey = '';
+    protected $primaryKey = 'id';
 
     protected $fillable = [
         'id', 'caption', 'code'

@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\DB;
 
 class Car extends Command
 {
-    protected $signature = 'car:import {pathToFile=storage/app/public/car/data.xml}';
+    protected $signature = 'car:import {pathToFile=storage/app/car/data.xml}';
     protected $description = 'Import cars from data file';
 
     //for xml validate

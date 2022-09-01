@@ -20,7 +20,7 @@
 #### database/migrations
 - тут все миграции
 - бд спроектирована с использованием связей и справочников
-- в таблице car испольжуется композитный первичный ключ: связь car_id(id из xml) и generation_id
+- в таблице car используется  композитный первичный ключ: связь car_id(id из xml) и generation_id
 - я забыл добавить ограничение на уникальность связки car_id и generation_id
 - схема бд:
 <p><img src="http://gazinsmarthome.duckdns.org/db.png" alt="License"></p>

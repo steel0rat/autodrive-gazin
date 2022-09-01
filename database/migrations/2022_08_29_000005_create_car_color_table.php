@@ -14,7 +14,7 @@ class CreateCarColorTable extends Migration
     public function up()
     {
         Schema::create('car_color', function (Blueprint $table) {
-            $table->integer('id')->unsigned()->index()->unique();
+            $table->integer('id')->unsigned()->index()->unique()->startingValue(1)->autoIncrement();
             $table->string('caption');
             $table->string('code')->nullable();
         });

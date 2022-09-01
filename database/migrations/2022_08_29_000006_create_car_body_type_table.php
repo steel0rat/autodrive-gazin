@@ -14,7 +14,7 @@ class CreateCarBodyTypeTable extends Migration
     public function up()
     {
         Schema::create('car_body_type', function (Blueprint $table) {
-            $table->integer('id')->unsigned()->index()->unique();
+            $table->integer('id')->unsigned()->index()->unique()->startingValue(1)->autoIncrement();
             $table->string('caption');
             $table->string('code')->nullable();
         });

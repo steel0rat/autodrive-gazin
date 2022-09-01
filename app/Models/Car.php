@@ -26,7 +26,7 @@ class Car extends Model
 
     ];
 
-    public $timestamps = true;
+    public $timestamps = false;
 
     public function mark()
     {

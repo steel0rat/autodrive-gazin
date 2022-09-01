@@ -31,10 +31,14 @@ class CarColor extends Model
 
     ];
 
-    public $timestamps = true;
+    public $timestamps = false;
 
     public function car()
     {
         return $this->hasMany(Car::class, 'color_id', 'id');
     }
+
+    #public static function findOrCreate($caption, $code = null) {
+    #
+    #}
 }

@@ -31,7 +31,7 @@ class CarGearType extends Model
 
     ];
 
-    public $timestamps = true;
+    public $timestamps = false;
 
     public function car()
     {
